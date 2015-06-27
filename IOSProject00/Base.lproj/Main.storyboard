@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="IOSProject00" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da3-9O-q5T">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.034156345115798466" green="0.10303194280089381" blue="0.19375394570707072" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Registros de Pedidos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="261" width="286" height="55"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="yD7-F8-Rf4" kind="popoverPresentation" popoverAnchorView="Da3-9O-q5T" id="J66-C2-nWA">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wpid-ventas-online.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SiK-N3-JdJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="70" width="400" height="140"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYq-xZ-cPR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.034156345120000001" green="0.1030319428" blue="0.19375394570000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Catalogo de Productos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="351" width="286" height="55"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="bXx-A0-kbx" kind="show" id="BAH-4W-48h"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWO-W1-QpZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title=".: Registro de Ventas :." id="73a-1i-IOR"/>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Da3-9O-q5T"/>
+                                <exclude reference="SiK-N3-JdJ"/>
+                                <exclude reference="OYq-xZ-cPR"/>
+                                <exclude reference="cWO-W1-QpZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Da3-9O-q5T"/>
+                                <include reference="SiK-N3-JdJ"/>
+                                <include reference="OYq-xZ-cPR"/>
+                                <include reference="cWO-W1-QpZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="249.75"/>
+        </scene>
+        <!--PEDIDOS-->
+        <scene sceneID="t26-tf-Fws">
+            <objects>
+                <viewController id="wR1-TT-0V4" customClass="ViewControllerForm" customModule="IOSProject00" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PSq-sw-SrI"/>
+                        <viewControllerLayoutGuide type="bottom" id="jDA-ic-upx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QAG-A4-rVS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de Cliente" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fW-A9-3aA">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="100" width="313" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Direccion de Cliente" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvJ-dc-i1e">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="151" width="313" height="30"/>
+                                </variation>
+                            </textField>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIq-8h-WyA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.034156345120000001" green="0.1030319428" blue="0.19375394570000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Registrar pedido realizado">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="61" y="423" width="296" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="BtnRegistrarPedido:" destination="wR1-TT-0V4" eventType="touchUpInside" id="bJ3-nP-thl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pedido Realizado (SI / NO)" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ioO-jv-7gv">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="198" width="313" height="30"/>
+                                </variation>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" keyboardDismissMode="onDrag" text="Siagard = , Malarata = , Beccon = , FertiFol = , Cucaxan = " translatesAutoresizingMaskIntoConstraints="NO" id="MfB-3g-6O5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="241" width="313" height="137"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9fW-A9-3aA"/>
+                                <exclude reference="rvJ-dc-i1e"/>
+                                <exclude reference="fIq-8h-WyA"/>
+                                <exclude reference="ioO-jv-7gv"/>
+                                <exclude reference="MfB-3g-6O5"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9fW-A9-3aA"/>
+                                <include reference="rvJ-dc-i1e"/>
+                                <include reference="fIq-8h-WyA"/>
+                                <include reference="ioO-jv-7gv"/>
+                                <include reference="MfB-3g-6O5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="PEDIDOS" id="AVc-ug-7Xu">
+                        <barButtonItem key="leftBarButtonItem" title="Volver" id="6uC-cA-Se0">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" id="a68-uQ-Fqa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Lista" id="jsW-JC-Q9g">
+                            <connections>
+                                <segue destination="7OM-Ha-riX" kind="show" id="TrW-sx-ZvJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TxtDetalle" destination="MfB-3g-6O5" id="n31-9Q-0ey"/>
+                        <outlet property="TxtDireccion" destination="rvJ-dc-i1e" id="LxH-xC-SJ1"/>
+                        <outlet property="TxtNombre" destination="9fW-A9-3aA" id="7Rk-Nr-tPo"/>
+                        <outlet property="TxtPedido" destination="ioO-jv-7gv" id="Zcw-pE-EQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Okm-d6-iCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.5" y="253.5"/>
+        </scene>
+        <!--Table View Controller List-->
+        <scene sceneID="Y6T-kk-oxv">
+            <objects>
+                <tableViewController id="7OM-Ha-riX" customClass="TableViewControllerList" customModule="IOSProject00" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="22" sectionFooterHeight="22" id="dJ7-XP-iYp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="91" id="wDg-SF-6x3">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wDg-SF-6x3" id="BCr-dh-aGL">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7OM-Ha-riX" id="ljl-M7-8jf"/>
+                            <outlet property="delegate" destination="7OM-Ha-riX" id="UHm-uw-9I0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="2ea-PP-CRv"/>
+                    <connections>
+                        <outlet property="TblList" destination="dJ7-XP-iYp" id="pVA-Ic-774"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u5D-tZ-84q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2416.5" y="249.75"/>
+        </scene>
+        <!--Detail4 View View Controller-->
+        <scene sceneID="oUy-MD-buC">
+            <objects>
+                <viewController id="CHI-hz-Gw0" customClass="Detail4ViewViewController" customModule="IOSProject00" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3jH-Ij-bla"/>
+                        <viewControllerLayoutGuide type="bottom" id="dhW-JE-iYM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5h8-Q1-NWV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hft-Tb-oEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3082.5" y="246.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pPp-IY-Orf">
+            <objects>
+                <viewController id="bXx-A0-kbx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pw7-VB-zxO"/>
+                        <viewControllerLayoutGuide type="bottom" id="iiI-EG-Mcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="88e-3r-ALF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-PP-okl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ps8-hq-70m">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="187" y="79" width="160" height="128"/>
+                                        </variation>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pzB-dP-KDN">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Herbicida selectivo para el control de malezas anuales. Pre-emergente temprano, para el control de malezas en ajo, cebolla, zanahoria, apio, aní, piña, poro, vainita, soya, maní, papa y marigold.
+Categoría Toxicológica:	III - Ligeramente Peligroso - CUIDADO
+Etiqueta:	AZUL</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="8" y="79" width="173" height="128"/>
+                                        </variation>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="jRj-BK-Uir">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Herbicida post-emergente no selectivo de contacto. Excelente perfil toxicológico y medio ambiental.
+Categoría Toxicológica:	III - Ligeramente Peligroso - CUIDADO
+Etiqueta:	AZUL</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="162" y="227" width="185" height="128"/>
+                                        </variation>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Wvb-k6-UIY">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Herbicida post-emergente no selectivo. Se puede usar en cítricos, manzano, café, platano, caña de azúcar y para el control total de Malezas en bordos, drenes, acequias. Se debe aplicar cuando las malezas tengas de 4 a 8 hojas (total post-emergencia). Evitese el contacto con las hojas y partes verdes de los cultivos.
+Dosis:	2 a 3 litros /ha malezas anuales y de 4 a 6 litros /ha para malezas perennes.
+Categoría Toxicológica:	II - Ligerante Toxico - PRECAUCION
+Etiqueta:	VERDE</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="137" y="524" width="210" height="128"/>
+                                        </variation>
+                                    </textView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAW-Om-mWb">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <items>
+                                            <navigationItem title="Catalogo Productos" id="XMo-bI-sAB">
+                                                <barButtonItem key="leftBarButtonItem" style="plain" id="HD8-uW-iLa">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NYe-D7-0Fq">
+                                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Volver">
+                                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="vXZ-lx-hvc" kind="show" id="VzJ-Fy-90a"/>
+                                                        </connections>
+                                                    </button>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="0.0" y="25" width="400" height="44"/>
+                                        </variation>
+                                    </navigationBar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-js-m46">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="-3" y="234" width="166" height="128"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oSZ-20-zoz">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="178" y="377" width="169" height="128"/>
+                                        </variation>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RuX-8a-QIy">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="15" y="524" width="114" height="128"/>
+                                        </variation>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5ze-Ig-zFT">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Herbicida sistémico no selectivo, muy eficaz para el control de malezas perennes y anuales en: frutales, café, té, espárrago y caña de azúcar (redondeos y como madurante).
+Categoría Toxicológica:	III - Ligeramente Peligroso - CUIDADO
+Etiqueta:	AZUL</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="15" y="377" width="166" height="128"/>
+                                        </variation>
+                                    </textView>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Ps8-hq-70m"/>
+                                        <exclude reference="pzB-dP-KDN"/>
+                                        <exclude reference="jRj-BK-Uir"/>
+                                        <exclude reference="Wvb-k6-UIY"/>
+                                        <exclude reference="tAW-Om-mWb"/>
+                                        <exclude reference="tXb-js-m46"/>
+                                        <exclude reference="oSZ-20-zoz"/>
+                                        <exclude reference="RuX-8a-QIy"/>
+                                        <exclude reference="5ze-Ig-zFT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="970"/>
+                                    <mask key="subviews">
+                                        <include reference="Ps8-hq-70m"/>
+                                        <include reference="pzB-dP-KDN"/>
+                                        <include reference="jRj-BK-Uir"/>
+                                        <include reference="Wvb-k6-UIY"/>
+                                        <include reference="tAW-Om-mWb"/>
+                                        <include reference="tXb-js-m46"/>
+                                        <include reference="oSZ-20-zoz"/>
+                                        <include reference="RuX-8a-QIy"/>
+                                        <include reference="5ze-Ig-zFT"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LzI-PP-okl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LzI-PP-okl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3u1-pB-YPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="892.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V9h-ty-5Cl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yD7-F8-Rf4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N2L-nt-fJk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wR1-TT-0V4" kind="relationship" relationship="rootViewController" id="10d-1q-Jlo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZh-OW-UrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940.5" y="249.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="images1.jpg" width="260" height="194"/>
+        <image name="images2.jpg" width="258" height="195"/>
+        <image name="images3.jpg" width="215" height="234"/>
+        <image name="images4.jpg" width="225" height="225"/>
+        <image name="wpid-ventas-online.jpg" width="1170" height="400"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VzJ-Fy-90a"/>
+    </inferredMetricsTieBreakers>
+</document>
